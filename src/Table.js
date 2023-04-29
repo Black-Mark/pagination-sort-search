@@ -49,16 +49,19 @@ function Table({ data, noDataFound }) {
       </thead>
       {!noDataFound ? (
         <tbody>
-          {sortedData.map((item, index) => (
-            <tr key={index}>
-              {dataHeaders.map((header) => (
+        {sortedData.map((item, index) => (
+          <tr key={index}>
+            {dataHeaders.map((header) => {
+              const cellData = typeof item[header] === 'boolean' ? item[header].toString() : item[header];
+              return (
                 <td className="border px-4 py-2" key={header}>
-                  {item[header]}
+                  {cellData}
                 </td>
-              ))}
-            </tr>
-          ))}
-        </tbody>
+              )
+            })}
+          </tr>
+        ))}
+      </tbody>
       ) : (
         <tbody>
           <tr>

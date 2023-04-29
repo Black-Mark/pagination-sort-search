@@ -3,16 +3,16 @@ import TablePaginationGen from "./TablePaginationGen";
 
 function App(){
   const data = [
-    { id: 1, name: 'John Doe', email: 'johndoe@example.com', number: 73 },
-    { id: 2, name: 'Jane Smith', email: 'janesmith@example.com', number: 73 },
-    { id: 3, name: 'John Doe', email: 'johndoe@example.com', number: 73 },
-    { id: 4, name: 'Jane Smith', email: 'janesmith@example.com', number: 73 },
-    { id: 5, name: 'John Doe', email: 'johndoe@example.com', number: 73 },
-    { id: 6, name: 'Jane Smith', email: 'janesmith@example.com', number: 73 },
-    { id: 7, name: 'John Doe', email: 'johndoe@example.com', number: 73 },
-    { id: 8, name: 'Jane Smith', email: 'janesmith@example.com', number: 73 },
-    { id: 9, name: 'John Doe', email: 'johndoe@example.com', number: 73 },
-    { id: 10, name: 'Jane Smith', email: 'janesmith@example.com', number: 73 }
+    { id: 1, name: 'John Doe', email: 'johndoe@example.com', number: 73, "Power of Love": "power" },
+    { id: 2, name: 'Jane Smith', email: 'janesmith@example.com', number: 73, "Power of Love": "time" },
+    { id: 3, name: 'John Doe', email: 'johndoe@example.com', number: 73, "Power of Love": "time" },
+    { id: 4, name: 'Jane Smith', email: 'janesmith@example.com', number: 73, "Power of Love": "hope" },
+    { id: 5, name: 'John Doe', email: 'johndoe@example.com', number: 73, "Power of Love": "dice" },
+    { id: 6, name: 'Jane Smith', email: 'janesmith@example.com', number: 73, "Power of Love": "true" },
+    { id: 7, name: 'John Doe', email: 'johndoe@example.com', number: 73, "Power of Love": "false" },
+    { id: 8, name: 'Jane Smith', email: 'janesmith@example.com', number: 73, "Power of Love": false },
+    { id: 9, name: 'John Doe', email: 'johndoe@example.com', number: 73, "Power of Love": "time" },
+    { id: 10, name: 'Jane Smith', email: 'janesmith@example.com', number: 73, "Power of Love": true }
   ];
 
   const userTransactions = [
@@ -92,8 +92,8 @@ function App(){
   
   return (
     <div>
-      <TablePaginationGen data={data}/>
-      <TablePaginationGen data={userTransactions} pageSize={3} pagesToShow={5}/>
+      <TablePaginationGen data={data} pageSize={3} pagesToShow={3}/>
+      <TablePaginationGen data={userTransactions} pageSize={5} pagesToShow={5}/>
     </div>
   )
 }
