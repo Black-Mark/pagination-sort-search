@@ -1,0 +1,24 @@
+Table Pagination Features (Both Developer and User Sides)
+I. Separated File and Functions
+Pros: 
+Easy Passing Data
+Cons:
+The Table and Search on each function calls has the same design
+
+II. Search Function - User can Enter Text Key to Find Data That They are Looking For
+A. They Can Disable or Enable The Searching
+
+III. Auto-generated Key Objects - automatically generate value based on the data
+1. Drop-Down List
+2. Table Columns and Rows
+
+IV. Pagination - Allows the user to see data in optimized way and navigates through each pages.
+A. Buttons
+1. First
+2. Previous
+3. Page Number
+4. Next
+5. Last
+B. Data Shown Per Page and Page Numbers Shown In Navigation can easily be modified.
+
+V. Ascending and Descending - Users can sort the data based on the data columns and search results.
