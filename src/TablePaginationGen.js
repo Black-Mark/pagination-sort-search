@@ -30,7 +30,7 @@ export default function TablePaginationGen({ data, pageSize = 5, pagesToShow = 5
             });
 
             // Sort filtered data based on search column at ascending order
-            if (searchText) {
+            //if (searchText) {
                 filteredData.sort((a, b) => {
                     const columnA = a[searchColumn];
                     const columnB = b[searchColumn];
@@ -42,7 +42,7 @@ export default function TablePaginationGen({ data, pageSize = 5, pagesToShow = 5
                     }
                     return 0;
                 });
-            }
+            //}
 
             // Update data state with filtered data or show "No Data Found"
             if (filteredData.length > 0) {
@@ -72,7 +72,7 @@ export default function TablePaginationGen({ data, pageSize = 5, pagesToShow = 5
         });
 
         // Sort filtered data based on search column at ascending order
-        if (searchText) {
+        //if (searchText) {
             filteredData.sort((a, b) => {
                 const columnA = a[searchColumn];
                 const columnB = b[searchColumn];
@@ -84,7 +84,7 @@ export default function TablePaginationGen({ data, pageSize = 5, pagesToShow = 5
                 }
                 return 0;
             });
-        }
+        //}
 
         // Update data state with filtered data or show "No Data Found"
         if (filteredData.length > 0) {
